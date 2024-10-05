@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!--navigation menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>Raghu</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="C:\Users\raghu\OneDrive\Desktop\main.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Raghu</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter"></span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I'm a web developer passionate about creating responsive and user-friendly websites. Welcome to my portfolio!</p>
+                <div class="social-links">
+                    <a target="_blank" href="https://github.com/Raghuvendra30" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/raghuvendra.pratapsingh.7568/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/raghuvendra-pratap-singh-728a0725a/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://x.com/raghuvendr30" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--About Section Start-->
+<section class="about" id="about">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+        <div class="about-details">
+            <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                <img src="C:\Users\raghu\OneDrive\Desktop\main.jpg" alt=""/>
+            </div>
+            <div class="right">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Designing Is My Passion</div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                    Designing is my passion; it transforms ideas into visual realities. I thrive on creating engaging, intuitive designs that captivate audiences and enhance user experiences. Each project is an opportunity to blend creativity with functionality, whether I'm crafting a logo, developing a website, or creating a unique brand identity. I find joy in bringing concepts to life and making a lasting impression.
+                </p>
+                <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Skill Section Start-->
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Skills Reflects Our Knowledge</div>
+                <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">As a web developer, I bring a diverse skill set in HTML, CSS, JavaScript, and React.js, combined with a passion for creating user-friendly digital experiences. My focus on responsive design ensures that my projects are visually appealing and accessible on all devices.
+
+                    I thrive on challenges and am always eager to learn and grow. I look forward to collaborating on innovative projects that push boundaries and make a meaningful impact.</p>
+                <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="num">10</div>
+                    <div class="exp">
+                        Years Of <br />
+                        Experience
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic"data-aos="fade-right"data-aos-duration="1200"data-aos-delay="150">HTML</div>
+                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="300">90%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left"data-aos-duration="1200"data-aos-delay="150">CSS</div>
+                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="300">80%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-right"data-aos-duration="1200"data-aos-delay="450">JavaScript</div>
+                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="600">70%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left"data-aos-duration="1200"data-aos-delay="450">PHP</div>
+                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="600">60%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Services Section Start-->
+<section class="services" id="services">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
+        <div class="boxes">
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='200'>
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Web Development</div>
+                <p>I specialize in creating modern, responsive websites tailored to your needs. Whether you're looking for a simple landing page, a full-fledged e-commerce platform, or custom web applications, I ensure that your website is user-friendly, fast, and optimized for all devices. Let's turn your ideas into a seamless digital experience!</p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <div class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="topic">Graphic Design</div>
+                <p>As a graphic designer, I specialize in creating visually compelling designs that elevate brand identity. From logos to marketing materials, my focus is on delivering clean, modern, and impactful designs that resonate with your target audience. Whether you need digital assets, print-ready files, or unique branding solutions, I bring creativity and attention to detail to every project.</p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                <div class="icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="topic">Digital Marketing</div>
+                <p>In today’s digital landscape, a strong online presence is crucial for business growth. I offer tailored digital marketing services, including SEO to boost your website's visibility, social media marketing to engage your audience, and content marketing strategies that resonate with your target market. Additionally, I create effective email marketing campaigns to nurture leads and convert them into loyal customers. Let me help you navigate the digital world and achieve your marketing goals!
+
+                </p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                <div class="icon">
+                    <i class="fab fa-android"></i>
+                </div>
+                <div class="topic">Icon Design</div>
+                <p>Transform your ideas into stunning visuals with my custom icon design services. I specialize in creating unique, professional icons that capture the essence of your brand and enhance user experience. Whether you need icons for web applications, mobile apps, or marketing materials, I ensure each design is tailored to meet your specific needs and aligned with your brand identity. Let’s collaborate to bring your vision to life with icons that stand out and make a lasting impression.</p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                <div class="icon">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <div class="topic">Photography</div>
+                <p>I specialize in a variety of photography styles, including portrait, landscape, and event photography. With a keen eye for detail and a passion for storytelling, I strive to create stunning visuals that resonate with emotion and beauty. Whether it’s a special event, a personal portrait, or breathtaking landscapes, my goal is to provide high-quality images that reflect the unique essence of each moment. Let's work together to capture your story through my lens!</p>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                <div class="icon">
+                    <i class="fas fa-tablet-alt"></i>
+                </div>
+                <div class="topic">Apps Development</div>
+                <p>At [Your Company Name], we create innovative and user-friendly mobile applications tailored to your business needs. Our expert team designs and develops high-quality apps for both iOS and Android platforms, focusing on enhancing user experience and driving growth. Whether you need a simple customer connection app or a complex solution to streamline operations, we are committed to bringing your ideas to life.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact Me Section Start-->
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+            <span>Contact Me</span>
+        </div>
+        <div class="text">
+            <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sit omnis, sapiente vero asperiores, excepturi natus aliquid reiciendis dolores repellendus doloremque libero ab quaerat. Velit laborum ad reprehenderit ducimus dolor!</p>
+            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                <button>Let's Chat</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer Section Start-->
+<footer>
+    <div class="text">
+        <span>Created By
+            <a href="#">Raghuvendra</a>|&#169;2024 All Rights Reserved</span>
+    </div>
+</footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({offset:0});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
