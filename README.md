@@ -41,8 +41,6 @@ The portfolio is fully responsive and optimized for desktop, tablet, and mobile 
 
 ## 🔗 Live Portfolio
 
-> Add your GitHub Pages URL here after deployment
-
 ```text
 https://raghuvendra30.github.io/Raghuvendra-Portfolio/
 ```
@@ -270,8 +268,6 @@ Awarded during project presentation competition for creating environmentally imp
 
 ## 📈 GitHub Stats
 
-> Add these after publishing if desired.
-
 ```markdown
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Raghuvendra30&show_icons=true)
 
@@ -296,8 +292,7 @@ https://github.com/Raghuvendra30
 
 ### Portfolio
 
-raghuvendra-portfolio.netlify.app
-
+https://raghuvendra-portfolio.netlify.app/
 ---
 
 ## ⭐ Support
