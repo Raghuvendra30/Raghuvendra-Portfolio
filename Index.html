@@ -3,76 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <title>Responsive Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Raghuvendra Singh, a web developer passionate about creating responsive and user-friendly websites.">
 </head>
 <body>
 
     <!--navigation menu-->
     <nav>
         <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                <span>Raghu</span>
-            </div>
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">RS</div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#Experience">Experience & Achievements</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            <i class="fa fa-bars hamburg" onclick="toggleDropdown()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#Experience">Experience & Achievements</a>
+                <a href="#contact">Contact</a>
+                <i class="fa fa-xmark cancel" onclick="toggleDropdown()"></i>
             </div>
         </div>
     </nav>
     <section>
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="C:\Users\raghu\OneDrive\Desktop\main.jpg" alt="">
+                <img src="/assets/photo.jpeg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Raghu</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter"></span><label for=""></label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I'm a web developer passionate about creating responsive and user-friendly websites. Welcome to my portfolio!</p>
+                <div class="availability-badge">
+                    <span class="status-dot"></span>
+                    Open to Full-Time Opportunities
+                </div>
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Raghuvendra Pratap Singh</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a <span class="dynamic-text"></span></div>                               
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Passionate AI & Full Stack Developer specializing in Machine Learning, Generative AI, FastAPI, React, and Intelligent Systems. Focused on building impactful solutions for healthcare, finance, and disaster management.</p>
+                <div class="quick-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-code"></i>
+                        <span>4+ AI Projects</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-award"></i>
+                        <span>NVIDIA Certified</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>AI Intern @ Marksman Technologies</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-book-reader"></i>
+                        <span>B.Tech Information Technology</span>
+                    </div>
+                </div>
                 <div class="social-links">
-                    <a target="_blank" href="https://github.com/Raghuvendra30" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a target="_blank" href="https://www.facebook.com/raghuvendra.pratapsingh.7568/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/raghuvendra-pratap-singh-728a0725a/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://x.com/raghuvendr30" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://github.com/Raghuvendra30" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/raghuvendra-pratap-singh-728a0725a/" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="_blank" href="mailto:raghuvendrapratpsingh30@gmail.com" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
                 <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <button>Hire me</button>
+                    <a href="resume/Raghuvendra_Singh1.pdf" download class="resume-btn">
+                        Download Resume                        
+                    </a>
+                    <a href="#contact" class="contact-btn">
+                        Contact Me
+                    </a>
+                </div>                
                 </div>
             </div>
         </div>
     </section>
-
+    
 <!--About Section Start-->
 <section class="about" id="about">
     <div class="content">
         <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
         <div class="about-details">
             <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
-                <img src="C:\Users\raghu\OneDrive\Desktop\main.jpg" alt=""/>
+                <img src="/assets/photo.jpeg" alt="Raghuvendra Singh"/>
             </div>
             <div class="right">
-                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Designing Is My Passion</div>
+                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Building Intelligent Solutions Through Technology</div>
                 <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
-                    Designing is my passion; it transforms ideas into visual realities. I thrive on creating engaging, intuitive designs that captivate audiences and enhance user experiences. Each project is an opportunity to blend creativity with functionality, whether I'm crafting a logo, developing a website, or creating a unique brand identity. I find joy in bringing concepts to life and making a lasting impression.
+                    I am a B.Tech Information Technology student passionate about Artificial Intelligence, Machine Learning, Generative AI, and Full Stack Development.
                 </p>
-                <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
-                    <button>Download CV</button>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="400">
+                    My experience includes building AI-powered mental health support systems, financial fraud detection platforms, cloudburst prediction solutions, and responsive web applications.
+                </p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="500">
+                    I enjoy solving real-world challenges through technology and continuously explore emerging technologies to create scalable, impactful, and user-centric solutions.
+                </p>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="600">
+                    Currently, I am seeking opportunities where I can contribute my technical skills, collaborate with innovative teams, and grow as an AI Engineer and Software Developer.
+                </p>
+                <div class="tech-stack">
+                    <h3>Core Technologies</h3>
+                    <div class="tech-badges">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                        <span>Machine Learning</span>
+                        <span>Generative AI</span>
+                        <span>MongoDB</span>
+                        <span>Firebase</span>
+                        <span>FAISS</span>
+                        <span>RAG</span>
+                        <span>Transformers</span>
+                    </div>
+                </div>
+                <div class="career-objective">
+                    <h3>Career Objective</h3>
+                    <p>
+                        My goal is to leverage Artificial Intelligence,
+                        Machine Learning, Generative AI, and Full Stack
+                        Development to build innovative solutions that
+                        solve real-world challenges and create meaningful
+                        impact across industries.
+                    </p>
+                </div>        
+                <button class="view-cv-button" onclick="window.open('/resume/Raghuvendra_Singh1.pdf', '_blank')">View Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Projects Section Start-->
+<section class="projects" id="projects">
+    <div class="content">
+        <div class="title">
+            <span>My Projects</span>
+        </div>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img class="project-thumb"src="assets/Cloudburst_Prediction.png" alt="Cloudburst">
+                <div class="project-preview">
+                    <img src="assets/Cloudburst_Prediction.png" alt="Cloudburst preview">
+                </div>
+                <span class="status-badge">AI Project</span>
+                <h3>
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    Cloudburst Prediction System
+                </h3>
+                <p>
+                    AI-powered cloudburst forecasting system using LSTM, FastAPI and IoT integration.
+                </p>
+                <div class="project-tech">
+                    <span>LSTM</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                    <span>Firebase</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Raghuvendra30/Cloudburst-Prediction-System" target="_blank">
+                        <i class="fa-brands fa-github"></i>GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img class="project-thumb" src="/assets/VaultSecureAI.png" alt="VaultSecureAI Project">
+                <div class="project-preview">
+                    <img src="/assets/VaultSecureAI.png" alt="VaultSecureAI preview">
+                </div>
+                <span class="status-badge">ML Project</span>
+                <h3>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    VaultSecureAI
+                </h3>
+                <p>
+                    Financial fraud detection platform using TensorFlow, ML and FastAPI.
+                </p>
+                <div class="project-tech">
+                    <span>TensorFlow</span>
+                    <span>ML</span>
+                    <span>FastAPI</span>
+                    <span>React</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Raghuvendra30/VaultSecureAI" target="_blank">
+                        <i class="fa-brands fa-github"></i>GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img class="project-thumb" src="/assets/Mental_Health_ChatBot.png" alt="Sakhi AI Chatbot Project">
+                <div class="project-preview">
+                    <img src="/assets/Mental_Health_ChatBot.png" alt="Sakhi AI Chatbot Project">
+                </div>
+                <span class="status-badge">Generative AI</span>
+                <h3>
+                    <i class="fa-solid fa-robot"></i>
+                    Sakhi AI Chatbot
+                </h3>
+                <p>
+                    AI mental health chatbot powered by RAG and Generative AI.
+                </p>
+                <div class="project-tech">
+                    <span>RAG</span>
+                    <span>FAISS</span>
+                    <span>Transformers</span>
+                    <span>Flask</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Raghuvendra30/Sakhi-AI-Mental-Health-Chatbot" target="_blank">
+                        <i class="fa-brands fa-github"></i>GitHub
+                    </a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img class="project-thumb" src="/assets/Auto_Park.png" alt="AutoPark Project">
+                <div class="project-preview">
+                    <img src="/assets/Auto_Park.png" alt="AutoPark Project">
+                </div>
+                <span class="status-badge">Web App</span>
+                <h3>
+                    <i class="fa-solid fa-car"></i>
+                    AutoPark
+                </h3>
+                <p>
+                    Smart parking reservation platform with Firebase integration.
+                </p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Firebase</span>
+                </div>
+                <div class="project-buttons">
+                    <a href="https://github.com/Raghuvendra30/Auto_Park" target="_blank">
+                        <i class="fa-brands fa-github"></i>GitHub
+                    </a>
                 </div>
             </div>
         </div>
@@ -81,94 +262,264 @@
 
 <!--My Skill Section Start-->
 <section class="skills" id="skills">
-    <div class="content">
-        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
-        <div class="skills-details">
-            <div class="text">
-                <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Skills Reflects Our Knowledge</div>
-                <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">As a web developer, I bring a diverse skill set in HTML, CSS, JavaScript, and React.js, combined with a passion for creating user-friendly digital experiences. My focus on responsive design ensures that my projects are visually appealing and accessible on all devices.
 
-                    I thrive on challenges and am always eager to learn and grow. I look forward to collaborating on innovative projects that push boundaries and make a meaningful impact.</p>
-                <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-                    <div class="num">10</div>
-                    <div class="exp">
-                        Years Of <br />
-                        Experience
-                    </div>
-                </div>
-            </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic"data-aos="fade-right"data-aos-duration="1200"data-aos-delay="150">HTML</div>
-                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="300">90%</div>
-                </div>
-                <div class="box">
-                    <div class="topic"data-aos="fade-left"data-aos-duration="1200"data-aos-delay="150">CSS</div>
-                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="300">80%</div>
-                </div>
-                <div class="box">
-                    <div class="topic"data-aos="fade-right"data-aos-duration="1200"data-aos-delay="450">JavaScript</div>
-                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="600">70%</div>
-                </div>
-                <div class="box">
-                    <div class="topic"data-aos="fade-left"data-aos-duration="1200"data-aos-delay="450">PHP</div>
-                    <div class="per"data-aos="zoom-in"data-aos-duration="1200"data-aos-delay="600">60%</div>
-                </div>
+    <div class="title" data-aos="fade-up" data-aos-duration="1200">
+        <span>Technical Skills</span>
+    </div>
+
+    <p class="skills-subtitle">
+        Technologies and tools I use to build AI-powered, scalable,
+        and user-centric software solutions.
+    </p>
+
+    <div class="skills-grid">
+
+        <!-- AI & ML -->
+
+        <div class="skill-box ai-card">
+            <h3>
+                <i class="fa-solid fa-brain"></i>
+                AI & Machine Learning
+            </h3>
+
+            <div class="skill-tags">
+                <span>TensorFlow</span>
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>Generative AI</span>
+                <span>NLP</span>
+                <span>RAG</span>
+                <span>FAISS</span>
+                <span>Transformers</span>
             </div>
         </div>
+
+        <!-- Frontend -->
+
+        <div class="skill-box">
+            <h3>
+                <i class="fa-solid fa-laptop-code"></i>
+                Frontend
+            </h3>
+
+            <div class="skill-tags">
+                <span>React.js</span>
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Tailwind CSS</span>
+                <span>Responsive Design</span>
+            </div>
+        </div>
+
+        <!-- Backend -->
+
+        <div class="skill-box">
+            <h3>
+                <i class="fa-solid fa-server"></i>
+                Backend
+            </h3>
+
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Flask</span>
+                <span>REST APIs</span>
+                <span>Authentication</span>
+            </div>
+        </div>
+
+        <!-- Database -->
+
+        <div class="skill-box">
+            <h3>
+                <i class="fa-solid fa-database"></i>
+                Databases
+            </h3>
+
+            <div class="skill-tags">
+                <span>MongoDB</span>
+                <span>Firebase</span>
+                <span>MySQL</span>
+            </div>
+        </div>
+
+        <!-- Tools -->
+
+        <div class="skill-box">
+            <h3>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                Tools & Platforms
+            </h3>
+
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Postman</span>
+                <span>Linux</span>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Stats -->
+
+    <div class="skill-stats">
+
+        <div>
+            <h3>4+</h3>
+            <span>Major Projects</span>
+        </div>
+
+        <div>
+            <h3>3+</h3>
+            <span>AI Solutions</span>
+        </div>
+
+        <div>
+            <h3>15+</h3>
+            <span>Technologies</span>
+        </div>
+
+    </div>
+
 </section>
 
-<!--My Services Section Start-->
-<section class="services" id="services">
+<!--My Experience Section Start-->
+<section class="Experience" id="Experience">
     <div class="content">
-        <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
-        <div class="boxes">
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay='200'>
-                <div class="icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="topic">Web Development</div>
-                <p>I specialize in creating modern, responsive websites tailored to your needs. Whether you're looking for a simple landing page, a full-fledged e-commerce platform, or custom web applications, I ensure that your website is user-friendly, fast, and optimized for all devices. Let's turn your ideas into a seamless digital experience!</p>
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                <div class="icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="topic">Graphic Design</div>
-                <p>As a graphic designer, I specialize in creating visually compelling designs that elevate brand identity. From logos to marketing materials, my focus is on delivering clean, modern, and impactful designs that resonate with your target audience. Whether you need digital assets, print-ready files, or unique branding solutions, I bring creativity and attention to detail to every project.</p>
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
-                <div class="icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="topic">Digital Marketing</div>
-                <p>In today’s digital landscape, a strong online presence is crucial for business growth. I offer tailored digital marketing services, including SEO to boost your website's visibility, social media marketing to engage your audience, and content marketing strategies that resonate with your target market. Additionally, I create effective email marketing campaigns to nurture leads and convert them into loyal customers. Let me help you navigate the digital world and achieve your marketing goals!
+        <div class="title" data-aos="fade-up" data-aos-duration="1200">
+            <span>Experience & Achievements</span>
+        </div>
 
+        <p class="experience-subtitle">
+            My professional journey, industry experience, certifications, and key accomplishments in Artificial Intelligence, Full Stack Development, and emerging technologies.
+        </p>
+
+        <div class="boxes">
+
+            <!-- Internship -->
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+
+                <div class="topic">
+                    AI & Automation Internship
+                </div>
+
+                <p>
+                    Successfully completed a Summer Internship at
+                    <strong>Marksman Technologies Pvt. Ltd.</strong>
+                    in the Genify AI Lab.
                 </p>
+
+                <ul class="exp-list">
+                    <li>AI Agents & Intelligent Chatbots</li>
+                    <li>Generative AI Applications</li>
+                    <li>Workflow Automation Systems</li>
+                    <li>Industry-Level Project Development</li>
+                </ul>
+
+                <span class="exp-tag">
+                    May 2025 – Jul 2025
+                </span>
+
             </div>
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+
+            <!-- Certifications -->
+
+            <div class="box">
+
                 <div class="icon">
-                    <i class="fab fa-android"></i>
+                    <i class="fas fa-medal"></i>
                 </div>
-                <div class="topic">Icon Design</div>
-                <p>Transform your ideas into stunning visuals with my custom icon design services. I specialize in creating unique, professional icons that capture the essence of your brand and enhance user experience. Whether you need icons for web applications, mobile apps, or marketing materials, I ensure each design is tailored to meet your specific needs and aligned with your brand identity. Let’s collaborate to bring your vision to life with icons that stand out and make a lasting impression.</p>
+
+                <div class="topic">
+                    Certifications
+                </div>
+
+                <ul class="exp-list">
+
+                    <li><strong>AI & Data Science</strong></li>
+                    <li>NVIDIA AI Learning</li>
+                    <li><strong>Networking & Security</strong></li>
+                    <li>CCNA Enterprise Networks</li>
+                    <li>CCNA Cybersecurity</li>
+                    <li>CCNA Ethical Hacking</li>
+                    <li><strong>Programming</strong></li>
+                    <li>Python Essentials</li>
+
+                </ul>
+
+                <span class="exp-tag">
+                    10+ Certifications
+                </span>
+
             </div>
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+
+            <!-- Achievements -->
+
+            <div class="box">
+
                 <div class="icon">
-                    <i class="fas fa-camera-retro"></i>
+                    <i class="fas fa-award"></i>
                 </div>
-                <div class="topic">Photography</div>
-                <p>I specialize in a variety of photography styles, including portrait, landscape, and event photography. With a keen eye for detail and a passion for storytelling, I strive to create stunning visuals that resonate with emotion and beauty. Whether it’s a special event, a personal portrait, or breathtaking landscapes, my goal is to provide high-quality images that reflect the unique essence of each moment. Let's work together to capture your story through my lens!</p>
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
-                <div class="icon">
-                    <i class="fas fa-tablet-alt"></i>
+
+                <div class="topic">
+                    Achievements
                 </div>
-                <div class="topic">Apps Development</div>
-                <p>At [Your Company Name], we create innovative and user-friendly mobile applications tailored to your business needs. Our expert team designs and develops high-quality apps for both iOS and Android platforms, focusing on enhancing user experience and driving growth. Whether you need a simple customer connection app or a complex solution to streamline operations, we are committed to bringing your ideas to life.
-                </p>
+
+                <ul class="exp-list">
+                    <li>INCITE 2026 Winner</li>
+                    <li>Most Environment Friendly Project Award</li>
+                    <li>Developed Cloudburst Prediction System</li>
+                    <li>Built 4+ Major AI & Full Stack Projects</li>
+                    <li>AI Internship Successfully Completed</li>
+                </ul>
+
+                <span class="exp-tag">
+                    Award Winner
+                </span>
+
             </div>
+
+        </div>
+
+        <!-- Stats -->
+
+        <div class="experience-stats">
+
+            <div class="stat-card">
+                <h2>10+</h2>
+                <span>Certifications</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>1</h2>
+                <span>Internship</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>4+</h2>
+                <span>Projects</span>
+            </div>
+
+            <div class="stat-card">
+                <h2>1</h2>
+                <span>Award</span>
+            </div>
+
+        </div>
+
+        <!-- Certification Button -->
+
+        <div class="cert-btn-container">
+            <button class="cert-btn" onclick="openCertModal()">
+                <i class="fa-solid fa-award"></i>
+                View All Certifications
+            </button>
         </div>
     </div>
 </section>
@@ -176,30 +527,337 @@
 <!--Contact Me Section Start-->
 <section class="contact" id="contact">
     <div class="content">
-        <div class="title" data-aos="fade-up" data-aos-duration="1500">
+        <div class="title" data-aos="fade-up">
             <span>Contact Me</span>
         </div>
-        <div class="text">
-            <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus sit omnis, sapiente vero asperiores, excepturi natus aliquid reiciendis dolores repellendus doloremque libero ab quaerat. Velit laborum ad reprehenderit ducimus dolor!</p>
-            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-                <button>Let's Chat</button>
+        <p class="contact-subtitle">
+            Open to AI Engineering, Machine Learning, Full Stack Development,
+            and Software Development opportunities.
+        </p>
+        <div class="contact-tags">
+            <span>AI Engineer</span>
+
+            <span>Machine Learning Engineer</span>
+
+            <span>Full Stack Developer</span>
+
+            <span>Software Developer</span>
+
+        </div>
+        <div class="contact-details">
+            <!-- LEFT SIDE -->
+            <div class="left" data-aos="fade-right">
+                <div class="contact-info">
+                    <h3 class="contact-card-title">
+                        Let's Connect
+                    </h3>
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 9693951508</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>raghuvendrapratapsingh30@gmail.com</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Noida, Uttar Pradesh, India</span>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/raghuvendrapratapsingh30" target="_blank">
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/Raghuvendra30" target="_blank">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="availability">
+                    <span class="available-dot"></span>
+                    Open to Full-Time & Internship Opportunities
+                </div>
+                <div class="response-time">
+                    <i class="fa-solid fa-clock"></i>
+                    Usually responds within 24 hours
+                </div>
+                <a href="/resume/Raghuvendra_Singh1.pdf" target="_blank" class="contact-resume-btn">
+                    <i class="fa-solid fa-download"></i>
+                    View Resume
+                </a>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="right" data-aos="fade-left">
+                <h3 class="form-title">
+                    Let's Build Something Together
+                </h3>
+                <p class="form-subtitle">
+                    Typically responds within 24 hours.
+                </p>
+                <form action="https://formspree.io/f/xbljjykl"
+                      method="POST">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required>
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject">
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required></textarea>
+                    <button type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
 <!--Footer Section Start-->
-<footer>
-    <div class="text">
-        <span>Created By
-            <a href="#">Raghuvendra</a>|&#169;2024 All Rights Reserved</span>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>Raghuvendra Pratap Singh</h3>
+
+        <p>
+            AI Engineer • Full Stack Developer • Building Intelligent & Scalable Solutions
+        </p>
+
+        <div class="footer-socials">
+
+            <a href="https://www.linkedin.com/in/raghuvendrapratapsingh30" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Raghuvendra30" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:raghuvendrapratapsingh30@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+        <div class="footer-availability">
+            <i class="fa-solid fa-circle"></i>
+            Available for Full-Time Opportunities
+        </div>
+
+        <div class="footer-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Noida, Uttar Pradesh, India
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-top">
+            <a href="#home" class="back-to-top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        <p class="copyright">
+            © 2026 Raghuvendra Singh. All Rights Reserved.
+        </p>
+
     </div>
+
 </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init({offset:0});
 </script>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
+<!-- Certifications Modal -->
+<div id="certModal" class="cert-modal">
+
+    <div class="cert-modal-content">
+
+        <span class="close-cert" onclick="closeCertModal()">&times;</span>
+
+        <h2>
+            <i class="fa-solid fa-trophy"></i>
+            Certifications & Achievements
+        </h2>
+        <div class="cert-summary">
+            <span>
+                <i class="fa-solid fa-certificate"></i>
+                13+ Certifications
+            </span>
+            <span>
+                <i class="fa-solid fa-file-lines"></i>
+                1 Research Paper
+            </span>
+            <span>
+                <i class="fa-solid fa-trophy"></i>
+                1 Awards
+            </span>
+            <span>
+                <i class="fa-solid fa-graduation-cap"></i>
+                9 Cisco Certifications
+            </span>
+            <span class="badge">
+                <i class="fa-brands fa-aws"></i>
+                AWS Certified
+            </span>
+            <span class="badge">
+                <i class="fa-solid fa-brain"></i>
+                Generative AI Certified
+            </span>
+        </div>
+
+        <!-- Awards -->
+        <div class="cert-category">
+            <h3>
+                <i class="fa-solid fa-award"></i>
+                Awards & Achievements
+            </h3>
+            <div class="cert-card">
+                <h4>Most Environment Friendly Project Award</h4>
+                <p>Tech-Genesis 2026 | Amity University</p>
+                <a href="certificates/environment-award.jpeg" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+        <!-- Research -->
+        <div class="cert-category">
+            <h3>
+                <i class="fa-solid fa-book-open"></i>
+                Research & Publications
+            </h3>
+
+            <div class="cert-card">
+                <h4>Cloudburst Prediction System using Real-time Data and Machine Learning</h4>
+                <p>ICOEI 2026 International Conference</p>
+
+                <a href="certificates/research-paper.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+        <div class="cert-category">
+            <h3>
+                <i class="fa-brands fa-aws"></i>
+                AWS Certifications
+            </h3>
+            <div class="cert-card">
+                <h4>AWS Cloud Foundations</h4>
+                <a href="certificates/AWS_Academy_Graduate___Cloud_Foundations.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+        <div class="cert-category">
+            <h3>
+                <i class="fa-solid fa-brain"></i>
+                Generative AI Certifications
+            </h3>
+            <div class="cert-card">
+                <h4>Generative AI Fundamentals</h4>
+                <a href="certificates/Generative_AI_Certificate.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+        <!-- Cisco -->
+        <div class="cert-category">
+            <h3>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Cisco Certifications
+            </h3>
+            <div class="cert-grid">
+
+                <div class="cert-card">
+                    <h4>CCNA Cybersecurity</h4>
+                    <a href="certificates/CCNA-Cybersecurity.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Ethical Hacking</h4>
+                    <a href="certificates/CCNA- Ethical_Hacking.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Enterprise Networks</h4>
+                    <a href="certificates/CCNA- Enterprise_Networks.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Data Science</h4>
+                    <a href="certificates/CCNA- Introduction to Data Science.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Modern AI</h4>
+                    <a href="certificates/CCNA- Introduction to Modern AI.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Python Essentials 1</h4>
+                    <a href="certificates/CCNA- Python_Essentials 1.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+                <div class="cert-card">
+                    <h4>CCNA Python Essentials 2</h4>
+                    <a href="certificates/CCNA- Python_Essentials 2.pdf" target="_blank">
+                        View Certificate
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Industry -->
+        <div class="cert-category">
+            <h3>
+                <i class="fa-solid fa-robot"></i>
+                Industry Certifications
+            </h3>
+            <div class="cert-card">
+                <h4>NVIDIA AI Learning</h4>
+                <a href="certificates/nvidia.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <h4>Welcome to ServiceNow</h4>
+                <a href="certificates/Micro-Certification - Welcome to ServiceNow.pdf" target="_blank">
+                    View Certificate
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
